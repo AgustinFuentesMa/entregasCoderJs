@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrega N1</title>
-    <script defer src="main.js"></script>
+    <title>Gestor de Reservas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script  defer src="js/main.js"></script>
 </head>
 <body>
-    <h1>Primera entrega de JavaScript</h1>
+    <header>
+        <h1>Gestor de Reservas</h1>
+        <h2>Centro Médico 9 de Julio</h2>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Nueva Reserva</h2>
+            <form id="reservaForm">
+                <label>Nombre del paciente:
+                    <input type="text" id="nombre" required>
+                </label>
+                <label>Email:
+                    <input type="email" id="email" required>
+                </label>
+                <label>Fecha:
+                    <input type="date" id="fecha" required>
+                </label>
+                <label>Hora:
+                    <input type="time" id="hora" required>
+                </label>
+                <label>Personas:
+                    <input type="number" id="personas" min="1" max="6" required>
+                </label>
+                <label>Motivo de la reserva:
+                    <textarea id="motivo"></textarea>
+                </label>
+                <button type="submit">Agregar Reserva</button>
+            </form>
+        </section>
+
+        <section id="list-section">
+            <h2>Reservas</h2>
+            <div id="contador"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Personas</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="reservaLista">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
