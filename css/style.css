@@ -38,7 +38,7 @@ section {
 form label {
     display: block;
     margin-bottom: 0.5rem;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 form input,
@@ -86,14 +86,63 @@ a {
     color: black;
 }
 
+select
+{
+  margin-bottom: 20px;
+}
 
-.botones {
+td .btn-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    padding: 10px;
+    flex-wrap: wrap;
+    margin: 8px 0;
 }
+
+td .btn-container button {
+    min-width: 90px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.btn-confirmar {
+    background: #28a745;
+    color: white;
+}
+.btn-confirmar:hover {
+    background: #218838;
+}
+
+.btn-cancelar {
+    background: #dc3545;
+    color: white;
+}
+.btn-cancelar:hover {
+    background: #c82333;
+}
+
+.btn-editar {
+    background: #ffc107;
+    color: black;
+}
+.btn-editar:hover {
+    background: #e0a800;
+}
+
+.btn-borrar {
+    background: #6c757d;
+    color: white;
+}
+.btn-borrar:hover {
+    background: #5a6268;
+}
+
+
 
 .estado-pendiente { color: orange; }
 .estado-confirmada { color: green; }

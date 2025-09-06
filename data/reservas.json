@@ -1,0 +1,14 @@
+{
+  "reservas": [
+    {
+      "nombre": "Juan Pérez",
+      "correo": "juan@mail.com",
+      "fecha": "2025-09-10",
+      "hora": "09:00",
+      "cantidad": 2,
+      "motivo": "Consulta general",
+      "estado": "Confirmada",
+      "pacientes": ["Juan Pérez", "María Pérez"]
+    }
+  ]
+}

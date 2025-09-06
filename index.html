@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Reservas</title>
     <link rel="stylesheet" href="css/style.css">
-    <script  defer src="js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/api.js"></script>
+    <script defer src="js/main.js"></script>
+
 </head>
 <body>
     <header>
@@ -26,9 +29,9 @@
                 <label>Fecha:
                     <input type="date" id="fecha" required>
                 </label>
-                <label>Hora:
-                    <input type="time" id="hora" required>
-                </label>
+                <label for="hora"> Hora:</label>
+                    <select id="hora" name="hora" required>
+                    </select>
                 <label>Personas:
                     <input type="number" id="personas" min="1" max="6" required>
                 </label>
